@@ -28,7 +28,11 @@ namespace TitanHelp.Pages.Customers
                 return NotFound();
             }
 
-            Customer = await _context.Customers.FirstOrDefaultAsync(m => m.CustomerID == id);
+            //Customer = await _context.Customers.FirstOrDefaultAsync(m => m.CustomerID == id);
+            Customer = await _context.Customers
+                .Include(s => s.Tickets)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.CustomerID == id);
 
             if (Customer == null)
             {
