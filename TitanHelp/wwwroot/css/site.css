@@ -1,10 +1,23 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+.navbar-inverse {
+    background-color: #004170 !important;
+}
+
+.navbar {
+    background-color: #004170 !important;
+}
+
+.navbar-brand {
+    background-color: #004170 !important;
+}
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+
 }
 
 /* Provide sufficient contrast against white background */
@@ -63,9 +76,10 @@ body {
   margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: #004170 !important; /* Vertically center the text there */
 }
