@@ -6,8 +6,9 @@
 
 <div class="row mb-auto">
     <div class="col-md-4">
-        <div class="row no-gutters border mb-4">
+        <div class="row no-gutters">
             <div class="col p-4 mb-4 ">
+                <img src="~/images/titan-lg-gold.png" />
                 <p class="card-text">
                     TitanHelp is a basic Help Desk application
                     that allows a user to create and edit tickets
@@ -20,7 +21,7 @@
         <div class="row no-gutters border mb-4">
             <div class="col p-4 d-flex flex-column position-static">
                 <p>
-                    <a href="https://docs.microsoft.com/aspnet/core/data/ef-rp/intro" class="stretched-link">Check tickets</a>
+                    <a asp-page="/Tickets/Index" class="stretched-link"><i class="fa-solid fa-ticket"></i>&nbsp; View Tickets</a>
                 </p>
             </div>
         </div>
@@ -29,7 +30,7 @@
         <div class="row no-gutters border mb-4">
             <div class="col p-4 d-flex flex-column">
                 <p>
-                    <a href="https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/data/ef-rp/intro/samples" class="stretched-link">Check customers</a>
+                    <a asp-page="/Customers/Index" class="stretched-link"><i class="fa-solid fa-users"></i>&nbsp; View Users</a>
                 </p>
             </div>
         </div>
