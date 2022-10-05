@@ -25,6 +25,5 @@ namespace TitanHelp.Pages.Tickets
         {
             Ticket = await _context.Tickets.ToListAsync();
         }
-
     }
 }
